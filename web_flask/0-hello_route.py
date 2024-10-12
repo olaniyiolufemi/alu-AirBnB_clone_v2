@@ -9,8 +9,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_flask():
-    """
-        Return: string when route queried
+    """Return a greeting string when route is queried.
+
+    Returns:
+        str: A greeting message.
     """
     return 'Hello HBNB!'
 
