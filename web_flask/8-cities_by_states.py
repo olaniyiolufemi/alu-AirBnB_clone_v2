@@ -23,8 +23,8 @@ Note:
     This script assumes the existence of a storage system and State model in the models module.
     It also requires a template file named '8-cities_by_states.html' for rendering the page.
 
-Author: [Your Name]
-Date: [Current Date]
+Author: Olaniyi
+Date: August
 """
 
 from models import storage
