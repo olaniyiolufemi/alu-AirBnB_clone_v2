@@ -68,3 +68,10 @@ class DBStorage:
         session = scoped_session(Session)
 
         self.__session = session()
+
+    # New method to create a new session after close
+    def create_new_session(self):
+        """Creates a new session after the previous one is closed"""
+        Session = sessionmaker(bind=self.__engine, expire_on_commit=False)
+        session = scoped_session(Session)
+        self.__session = session()
